@@ -18,6 +18,52 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio, function (sprite, otherS
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     pepe.ay = 300
 })
+function Coordenadas_energia () {
+    x3 = [
+    88,
+    40,
+    280,
+    408,
+    488,
+    520,
+    792,
+    744
+    ]
+    y3 = [
+    168,
+    312,
+    56,
+    248,
+    312,
+    312,
+    248,
+    24
+    ]
+}
+function Coordenadas_cofres () {
+    x2 = [
+    104,
+    104,
+    216,
+    376,
+    440,
+    472,
+    600,
+    664,
+    440
+    ]
+    y2 = [
+    24,
+    120,
+    24,
+    248,
+    120,
+    24,
+    264,
+    88,
+    168
+    ]
+}
 function nivel_3 () {
     cont_premios = 8
     nivel = 3
@@ -144,7 +190,7 @@ function nivel_3 () {
         4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
         4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
         `)
-    tiles.setTilemap(tiles.createTilemap(hex`3200140000000000000000000000000002000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000002000000000000000000000000020202020000020000000000020202020202020202000002020202020202020202020000000000000000000000000202020200000200000000000002000000000002000002000000000000000000000000000002000000000000020202020202020000000000020000000000000200000000000200000200000000000000000000000000000200000002000002000000000002000000000002020202020202020000020000020000020202020202000002000002020000020000000200000200000000000200000000000200000200000000000002000000000000000000000000000200000000000002000000020000020202020000020000000000020000020000000000000200000000000000000000000000020000000000000200000002000002000000000002000000000000000002020202000002020000020202020202020202000002020202020000020000000200000000000000000000000000000000000000000000000000000002000000000000000000000200000000000000000000020000000000000000000000000202020000000000000000000000000200000000000000000000020000000000000000000002000002020202020202020202000002000002000000000000000000020000020202020202020202020202020202020200000000000000000000000000000000000000000202020202020202000000000002000000000000000000000000000000000000000000000000000000000000000000000000020000000000000200000000000200000000000000000000000000000000000002000000020202020202020202000002020202000000000000020000020000020000020202020202020200000202020200000200000000000000000002000000000000000000000202000002000002000002000002000002000002000000000000000000000200000000000000000200000000000000000000000200000200000200000200000200000200000200000000000000000000020000020202020000020000020202020202020000020000020000020000020000020000020000020000020202020202020202000002000002000002000000000000000000000002000000000000000002000000000000000000000000020000000000000000000000000200000000000000000000000000000200000000000000000200000000000000000000000002000000000000000000000000020000000000`, img`
+    tiles.setTilemap(tiles.createTilemap(hex`3200140000000000000000000000000001000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000001000000000000000000000000010101010000010000000000010101010101010101000001010101010101010101010000000000000000000000000101010100000100000000000001000000000001000001000000000000000000000000000001000000000000010101010101010000000000010000000000000100000000000100000100000000000000000000000000000100000001000001000000000001000000000001010101010101010000010000010000010101010101000001000001010000010000000100000100000000000100000000000100000100000000000001000000000000000000000000000100000000000001000000010000010101010000010000000000010000010000000000000100000000000000000000000000010000000000000100000001000001000000000001000000000000000001010101000001010000010101010101010101000001010101010000010000000100000000000000000000000000000000000000000000000000000001000000000000000000000100000000000000000000010000000000000000000000000101010000000000000000000000000100000000000000000000010000000000000000000001000001010101010101010101000001000001000000000000000000010000010101010101010101010101010101010100000000000000000000000000000000000000000101010101010101000000000001000000000000000000000000000000000000000000000000000000000000000000000000010000000000000100000000000100000000000000000000000000000000000001000000010101010101010101000001010101000000000000010000010000010000010101010101010100000101010100000100000000000000000001000000000000000000000101000001000001000001000001000001000001000000000000000000000100000000000000000100000000000000000000000100000100000100000100000100000100000100000000000000000000010000010101010000010000010101010101010000010000010000010000010000010000010000010000010101010101010101000001000001000001000000000000000000000001000000000000000001000000000000000000000000010000000000000000000000000100000000000000000000000000000100000000000000000100000000000000000000000001000000000000000000000000010000000000`, img`
         . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . 
         . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . 
         2 2 2 2 . . 2 . . . . . 2 2 2 2 2 2 2 2 2 . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . 2 2 2 2 
@@ -165,159 +211,28 @@ function nivel_3 () {
         2 2 2 2 2 2 2 . . 2 . . 2 . . 2 . . 2 . . 2 . . 2 . . 2 . . 2 2 2 2 2 2 2 2 2 . . 2 . . 2 . . 2 . . 
         . . . . . . . . . 2 . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . 
         . . . . . . . . . 2 . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . 
-        `, [myTiles.tile0,sprites.dungeon.darkGroundCenter,sprites.dungeon.floorLightMoss,sprites.dungeon.greenOuterNorth2,sprites.dungeon.collectibleBlueCrystal,sprites.dungeon.collectibleInsignia,sprites.dungeon.chestOpen,sprites.dungeon.chestClosed], TileScale.Sixteen))
-    premio7 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio7.setPosition(88, 168)
-    premio9 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio9.setPosition(40, 312)
-    premio11 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio11.setPosition(280, 56)
-    premio13 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio13.setPosition(408, 248)
-    premio15 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio15.setPosition(488, 312)
-    premio17 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio17.setPosition(520, 312)
-    premio19 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio19.setPosition(792, 248)
-    premio21 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.energia)
-    premio21.setPosition(744, 24)
+        `, [myTiles.tile0,sprites.dungeon.floorLightMoss], TileScale.Sixteen))
+    for (let index = 0; index <= x3.length - 1; index++) {
+        energias = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . 4 4 4 4 . . . . . . 
+            . . . . 4 4 4 5 5 4 4 4 . . . . 
+            . . . 3 3 3 3 4 4 4 4 4 4 . . . 
+            . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
+            . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
+            . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
+            . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
+            . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
+            . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
+            . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
+            . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
+            . . . 4 2 2 2 2 2 2 2 2 4 . . . 
+            . . . . 4 4 2 2 2 2 4 4 . . . . 
+            . . . . . . 4 4 4 4 . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.energia)
+        energias.setPosition(x3[index], y3[index])
+    }
     cartel4 = sprites.create(img`
         e e e e e e e e e e e e e e e e 
         e 8 8 8 8 8 8 8 8 8 8 8 8 8 8 e 
@@ -506,177 +421,27 @@ function nivel_2 () {
         . . . . . . . . . 2 . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . 
         . . . . . . . . . 2 . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . . . . . . . . 2 . . . . . 
         `, [myTiles.tile0,sprites.dungeon.darkGroundCenter,sprites.dungeon.floorLightMoss,sprites.dungeon.greenOuterNorth2,sprites.dungeon.collectibleBlueCrystal,sprites.dungeon.collectibleInsignia,sprites.dungeon.chestOpen,sprites.dungeon.chestClosed], TileScale.Sixteen))
-    premio6 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio6.setPosition(104, 24)
-    premio8 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio8.setPosition(104, 120)
-    premio10 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio10.setPosition(216, 24)
-    premio12 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio12.setPosition(376, 248)
-    premio14 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio14.setPosition(440, 120)
-    premio16 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio16.setPosition(472, 24)
-    premio18 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio18.setPosition(600, 264)
-    premio20 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio20.setPosition(664, 88)
-    premio22 = sprites.create(img`
-        . . b b b b b b b b b b b b . . 
-        . b e 4 4 4 4 4 4 4 4 4 4 e b . 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
-        b e e 4 4 4 4 4 4 4 4 4 4 e e b 
-        b e e e e e e e e e e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b b b b b b b d d b b b b b b b 
-        c b b b b b b c c b b b b b b c 
-        c c c c c c b c c b c c c c c c 
-        b e e e e e c b b c e e e e e b 
-        b e e e e e e e e e e e e e e b 
-        b c e e e e e e e e e e e e c b 
-        b b b b b b b b b b b b b b b b 
-        . b b . . . . . . . . . . b b . 
-        `, SpriteKind.cofre)
-    premio22.setPosition(440, 168)
+    for (let index = 0; index <= x2.length - 1; index++) {
+        cofres = sprites.create(img`
+            . . b b b b b b b b b b b b . . 
+            . b e 4 4 4 4 4 4 4 4 4 4 e b . 
+            b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+            b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+            b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+            b e e 4 4 4 4 4 4 4 4 4 4 e e b 
+            b e e e e e e e e e e e e e e b 
+            b e e e e e e e e e e e e e e b 
+            b b b b b b b d d b b b b b b b 
+            c b b b b b b c c b b b b b b c 
+            c c c c c c b c c b c c c c c c 
+            b e e e e e c b b c e e e e e b 
+            b e e e e e e e e e e e e e e b 
+            b c e e e e e e e e e e e e c b 
+            b b b b b b b b b b b b b b b b 
+            . b b . . . . . . . . . . b b . 
+            `, SpriteKind.cofre)
+        cofres.setPosition(x2[index], y2[index])
+    }
     cartel3 = sprites.create(img`
         e e e e e e e e e e e e e e e e 
         e 8 8 8 8 8 8 8 8 8 8 8 8 8 8 e 
@@ -738,6 +503,10 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . f f f . . . . . 
         `)
 })
+function Coordenadas_monedas () {
+    x1 = [104, 168, 264, 328, 392]
+    y1 = [88, 40, 88, 40, 88]
+}
 sprites.onOverlap(SpriteKind.Player, SpriteKind.energia, function (sprite, otherSprite) {
     music.baDing.play()
     otherSprite.setImage(img`
@@ -763,63 +532,21 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.energia, function (sprite, other
     cont_premios += -1
 })
 function nivel_1 () {
-    cont_premios = 5
+    cont_premios = x1.length
     nivel = 1
-    premio1 = sprites.create(img`
-        . . b b b b . . 
-        . b 5 5 5 5 b . 
-        b 5 d 3 3 d 5 b 
-        b 5 3 5 5 1 5 b 
-        c 5 3 5 5 1 d c 
-        c d d 1 1 d d c 
-        . f d d d d f . 
-        . . f f f f . . 
-        `, SpriteKind.Premio)
-    premio1.setPosition(104, 88)
-    premio2 = sprites.create(img`
-        . . b b b b . . 
-        . b 5 5 5 5 b . 
-        b 5 d 3 3 d 5 b 
-        b 5 3 5 5 1 5 b 
-        c 5 3 5 5 1 d c 
-        c d d 1 1 d d c 
-        . f d d d d f . 
-        . . f f f f . . 
-        `, SpriteKind.Premio)
-    premio2.setPosition(168, 40)
-    premio3 = sprites.create(img`
-        . . b b b b . . 
-        . b 5 5 5 5 b . 
-        b 5 d 3 3 d 5 b 
-        b 5 3 5 5 1 5 b 
-        c 5 3 5 5 1 d c 
-        c d d 1 1 d d c 
-        . f d d d d f . 
-        . . f f f f . . 
-        `, SpriteKind.Premio)
-    premio3.setPosition(264, 88)
-    premio4 = sprites.create(img`
-        . . b b b b . . 
-        . b 5 5 5 5 b . 
-        b 5 d 3 3 d 5 b 
-        b 5 3 5 5 1 5 b 
-        c 5 3 5 5 1 d c 
-        c d d 1 1 d d c 
-        . f d d d d f . 
-        . . f f f f . . 
-        `, SpriteKind.Premio)
-    premio4.setPosition(328, 40)
-    premio5 = sprites.create(img`
-        . . b b b b . . 
-        . b 5 5 5 5 b . 
-        b 5 d 3 3 d 5 b 
-        b 5 3 5 5 1 5 b 
-        c 5 3 5 5 1 d c 
-        c d d 1 1 d d c 
-        . f d d d d f . 
-        . . f f f f . . 
-        `, SpriteKind.Premio)
-    premio5.setPosition(392, 88)
+    for (let index = 0; index <= x1.length - 1; index++) {
+        monedas = sprites.create(img`
+            . . b b b b . . 
+            . b 5 5 5 5 b . 
+            b 5 d 3 3 d 5 b 
+            b 5 3 5 5 1 5 b 
+            c 5 3 5 5 1 d c 
+            c d d 1 1 d d c 
+            . f d d d d f . 
+            . . f f f f . . 
+            `, SpriteKind.Premio)
+        monedas.setPosition(x1[index], y1[index])
+    }
     cartel2 = sprites.create(img`
         e e e e e e e e e e e e e e e e 
         e 8 8 8 8 8 8 8 8 8 8 8 8 8 8 e 
@@ -992,33 +719,20 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Nivel2, function (sprite, otherS
     }
 })
 let cartel2: Sprite = null
-let premio5: Sprite = null
-let premio4: Sprite = null
-let premio3: Sprite = null
-let premio2: Sprite = null
-let premio1: Sprite = null
+let monedas: Sprite = null
+let y1: number[] = []
+let x1: number[] = []
 let enemigo1: Sprite = null
 let cartel3: Sprite = null
-let premio22: Sprite = null
-let premio20: Sprite = null
-let premio18: Sprite = null
-let premio16: Sprite = null
-let premio14: Sprite = null
-let premio12: Sprite = null
-let premio10: Sprite = null
-let premio8: Sprite = null
-let premio6: Sprite = null
+let cofres: Sprite = null
 let enemigo2: Sprite = null
 let cartel4: Sprite = null
-let premio21: Sprite = null
-let premio19: Sprite = null
-let premio17: Sprite = null
-let premio15: Sprite = null
-let premio13: Sprite = null
-let premio11: Sprite = null
-let premio9: Sprite = null
-let premio7: Sprite = null
+let energias: Sprite = null
 let nivel = 0
+let y2: number[] = []
+let x2: number[] = []
+let y3: number[] = []
+let x3: number[] = []
 let cont_premios = 0
 let pepe: Sprite = null
 game.setDialogCursor(img`
@@ -1205,6 +919,9 @@ tiles.setTilemap(tiles.createTilemap(hex`1e0008000000000000000000000000000000000
     2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
     `, [myTiles.tile0,sprites.castle.tilePath5,sprites.builtin.forestTiles0,sprites.dungeon.floorLightMoss,sprites.dungeon.greenOuterNorth1], TileScale.Sixteen))
 scene.cameraFollowSprite(pepe)
+Coordenadas_cofres()
+Coordenadas_energia()
+Coordenadas_monedas()
 info.setScore(0)
 info.setLife(3)
 nivel_1()
